@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.mawan.layouts">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FrameLayoutActivity" />
+        <activity android:name=".TableLayoutActivity" />
+        <activity android:name=".TemasActivity" />
+        <activity
+            android:name=".ViewPagerIndexActivity"
+            android:label="Tipos View Page"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ViewPagerTabToolbarActivity"
+            android:label="ViewPager > ToolBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ViewPagerTabViewPagerActivity"
+            android:label="ViewPager > ViewPager"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ViewPagerPagerTitleStripActivity"
+            android:label="ViewPager > PagerTitleStrip"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".RecycleViewLinearLayoutActivity"
+            android:label="RecycleView(LinerLayout)"
+            android:parentActivityName=".MainActivity"/>
+    </application>
+
+</manifest>
